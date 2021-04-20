@@ -10,6 +10,11 @@ class Projectile{
         this.body = Constraint.create(options);
         World.add(world,this.body);
     }
+    
+     attach(body){
+        this.body.bodyA=body; 
+       }
+
 
     release(){
         this.body.bodyA = null;  
