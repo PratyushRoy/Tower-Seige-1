@@ -137,3 +137,9 @@ function mouseDragged(){
 function mouseReleased(){
   spring.release();
 }
+
+function keyPressed(){
+  if(keyCode===32){
+    spring.attach(ball.body);
+  }
+}
